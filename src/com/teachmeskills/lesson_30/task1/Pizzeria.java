@@ -4,7 +4,13 @@ import com.teachmeskills.lesson_30.task1.model.Pizza;
 
 import java.util.Scanner;
 
-public class Main {
+/**
+ * 1. Building a Pizza Ordering App Using the Builder Pattern
+ * Description: Create a pizza ordering app that allows users to customize their orders.
+ * Apply the Builder pattern to simplify the process of creating a pizza with different toppings.
+ * Consider how you can organize the interface for selecting options and how this will affect the final order.
+ */
+public class Pizzeria {
     public static void main(String[] args) {
         try(Scanner sc = new Scanner(System.in)) {
             System.out.println("Choose the pizza size (small, medium, large):");
@@ -26,7 +32,7 @@ public class Main {
             System.out.println("Add parsley? (true/false):");
             boolean parsley = Boolean.parseBoolean(sc.nextLine());
 
-            Pizza pizza = new Pizza.PizzaBuilder().setSize(size).setCrust(crust).setTomatoes(tomatoes).setCheese(cheese).setSausage(sausage).setMushrooms(mushrooms).setParsley(parsley).build();
+            Pizza pizza = new Pizza.Builder().setSize(size).setCrust(crust).setTomatoes(tomatoes).setCheese(cheese).setSausage(sausage).setMushrooms(mushrooms).setParsley(parsley).build();
 
             System.out.println("Here is your pizza, " + pizza);
 

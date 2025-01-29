@@ -9,60 +9,51 @@ public class Pizza {
     private boolean sausage;
     private boolean parsley;
 
-    public static class PizzaBuilder implements Ingredient {
-        Pizza pizza;
+    public static class Builder {
+        private final Pizza pizza;
 
-        public PizzaBuilder() {
+        public Builder() {
             pizza = new Pizza();
         }
 
-        @Override
-        public PizzaBuilder setSize(String size) {
+        public Builder setSize(String size) {
             pizza.size = size;
             return this;
         }
 
-        @Override
-        public PizzaBuilder setCrust(String crust) {
+        public Builder setCrust(String crust) {
             pizza.crust = crust;
             return this;
         }
 
-        @Override
-        public PizzaBuilder setCheese(boolean cheese) {
+        public Builder setCheese(boolean cheese) {
             pizza.cheese = cheese;
             return this;
         }
 
-        @Override
-        public PizzaBuilder setTomatoes(boolean tomatoes) {
+        public Builder setTomatoes(boolean tomatoes) {
             pizza.tomatoes = tomatoes;
             return this;
         }
 
-        @Override
-        public PizzaBuilder setMushrooms(boolean mushrooms) {
+        public Builder setMushrooms(boolean mushrooms) {
             pizza.mushrooms = mushrooms;
             return this;
         }
 
-        @Override
-        public PizzaBuilder setSausage(boolean sausage) {
+        public Builder setSausage(boolean sausage) {
             pizza.sausage = sausage;
             return this;
         }
 
-        @Override
-        public PizzaBuilder setParsley(boolean parsley) {
+        public Builder setParsley(boolean parsley) {
             pizza.parsley = parsley;
             return this;
         }
 
-        @Override
         public Pizza build() {
             return pizza;
         }
-
     }
 
     @Override
