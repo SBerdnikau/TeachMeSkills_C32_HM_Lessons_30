@@ -1,4 +1,4 @@
-# Design Patterns: Builder and Factory#
+# Design Patterns: Builder and Factory
 
 This README covers the key benefits and use cases of two fundamental software design patterns: Builder and Factory.
 
@@ -64,13 +64,13 @@ Reusability	The same steps can be used for different object variations.	Easily e
 ## 4. When to use each pattern?
 
 Use Builder:
-The object is complex, has many parameters (mandatory and optional).
-Object parameters must be specified in steps.
-The same construction process is required to create different types of objects.
+- The object is complex, has many parameters (mandatory and optional).
+- Object parameters must be specified in steps.
+- The same construction process is required to create different types of objects.
 Use Factory:
-Object creation needs to be isolated from external logic.
-The new object depends on input data (e.g. user input).
-New object types need to be added without modifying existing client code.
+- Object creation needs to be isolated from external logic.
+- The new object depends on input data (e.g. user input).
+- New object types need to be added without modifying existing client code.
 ## 5. Conclusion
 The Builder and Factory patterns solve different problems.
 
