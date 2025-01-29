@@ -10,13 +10,13 @@ The main idea is to sequentially add parts of the object without cluttering the 
 
 **The "Builder" pattern is useful when:**
 
-A complex object with many parameters is being created: The object has many mandatory and optional arguments, which can lead to "telescopic constructors".
+- A complex object with many parameters is being created: The object has many mandatory and optional arguments, which can lead to "telescopic constructors".
 
-The object must be created step by step: Construction of the object in stages, where properties or configurations are added at each stage.
+- The object must be created step by step: Construction of the object in stages, where properties or configurations are added at each stage.
 
-The object has several views or varieties: For example, different car models (sedan, SUV, sports car).
+- The object has several views or varieties: For example, different car models (sedan, SUV, sports car).
 
-The process of constructing the object depends on the instructions, which can be flexibly adapted. For example, constructing a complex graphical report or UI element.
+- The process of constructing the object depends on the instructions, which can be flexibly adapted. For example, constructing a complex graphical report or UI element.
 
 **Examples of using "Builder"**
 
@@ -32,14 +32,15 @@ Reusability: Using the same builder for different object variations.
 
 The Factory pattern is used to create objects without specifying their exact class. The main idea here is that object creation is delegated to the factory method, making the client code independent of specific classes.
 
-The Factory pattern is useful when:
-Client code does not need to know the specific implementations of objects: For example, the client just needs to create an interface element ("button" or "input field"), and the factory decides what object will be returned.
+**The Factory pattern is useful when:**
 
-Centralization of object creation logic: All objects are created through centralized factories to simplify modification.
+- Client code does not need to know the specific implementations of objects: For example, the client just needs to create an interface element ("button" or "input field"), and the factory decides what object will be returned.
 
-Objects depend on incoming data: The object will be different depending on the input, for example, the user type: administrator, guest, registered user.
+- Centralization of object creation logic: All objects are created through centralized factories to simplify modification.
 
-Ease of adding new object types: To add a new object type, you need to change the factory without changing the client code.
+- Objects depend on incoming data: The object will be different depending on the input, for example, the user type: administrator, guest, registered user.
+
+- Ease of adding new object types: To add a new object type, you need to change the factory without changing the client code.
 
 **Examples of using "Factory"**
 
