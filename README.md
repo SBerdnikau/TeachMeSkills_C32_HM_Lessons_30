@@ -41,7 +41,7 @@ Objects depend on incoming data: The object will be different depending on the i
 
 Ease of adding new object types: To add a new object type, you need to change the factory without changing the client code.
 
-Examples of using "Factory"
+**Examples of using "Factory"**
 
 Creating characters in the game: For example, "Mage", "Warrior", "Shooter" are selected depending on the player's input.
 Creating interface elements: The factory creates buttons for different platforms (Windows, macOS, Linux).
@@ -51,7 +51,7 @@ Encapsulation: Hiding the logic of creating and choosing the right classes.
 Less code duplication: Client code only cares about business logic, not object creation.
 Flexibility: It is easy to add new objects to the factory.
 
-##3. Comparison of patterns: Builder vs. Factory
+## 3. Comparison of patterns: Builder vs. Factory
 
 Criteria	Builder	Factory
 Purpose	Step-by-step creation of a complex object.	Create an object without defining its specific class.
